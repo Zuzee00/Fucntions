@@ -1,0 +1,8 @@
+#Dealing with Nan values
+
+def nan_remove(data):
+    print("Number of NaN values before removal: ", data.isna().sum())
+   
+    data = data.fillna(value=data.mean())
+    print('Number of Nan values after removal:  ',data.isna().sum())
+    return data
