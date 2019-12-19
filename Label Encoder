@@ -1,8 +1,0 @@
-#OneHotEnconding
-
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-def one_hot_encode(data):
-    labelencoder_df = LabelEncoder()
-
-    dr = labelencoder_df.fit_transform(data)
-    return dr
